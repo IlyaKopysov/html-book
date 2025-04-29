@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Электронный учебник HTML</title>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="logo">
+            <a href="./index.html"><img src="./assets/img/kiu-logo-menu (1).png" alt="kiu mini" class="kiu_mini"></a>
+        </div>
+        <div class="menu_bar">
+            <a href="./about.html" class="nav_bar">О нас</a>
+            <a href="./course1.html" class="nav_bar">Перейти к курсу</a>
+            <a href="./vhod.html" class="nav_bar">Войти/Зарегистрироваться</a>
+        </div>
+    </div>
+</header>
+<div class="course_wrapper">
+    <div class="course_panel">
+        <h1 class="course_title">Курс HTML:</h1>
+        <ol class="course_nav">
+            <a href="./course1.html" class="course_nav-bar-a"><li class="course_nav-bar"><strong>Введение в HTML</strong></li></a>
+            <a href="./course2.html" class="course_nav-bar-a"><li class="course_nav-bar"><strong>Элементы HTML</strong></li></a>
+            <a href="./course3.html" class="course_nav-bar-a"><li class="course_nav-bar"><strong>Структура HTML</strong></li></a>
+            <a href="./course4.html" class="course_nav-bar-a"><li class="course_nav-bar"><strong>Атрибуты</strong></li></a>
+            <a href="./course5.html" class="course_nav-bar-a"><li class="course_nav-bar"><strong>Работа с текстом</strong></li></a>
+            <a href="./course6.html" class="course_nav-bar-a"><li class="course_nav-bar"><strong>Заголовки</strong></li></a>
+            <a href="./course7.html" class="course_nav-bar-a"><li class="course_nav-bar"><strong>Изображения</strong></li></a>
+            <a href="./course8.html" class="course_nav-bar-a"><li class="course_nav-bar"><strong>Размеры изображений</strong></li></a>
+            <a href="./course9.html" class="course_nav-bar-a"><li class="course_nav-bar"><strong>Создание ссылок</strong> </li></a>
+            <a href="./course10.html" class="course_nav-bar-a"><li class="course_nav-bar"><strong>Элементы разделов</strong></li></a>
+          </ol>
+    </div>
+<div class="course_main-content">
+    <div class="course_content">
+        <div class="course_content-title">
+            <h1>3. Структура HTML:</h1>
+        </div>
+        <p>Если открыть любую веб-страницу, то она будет содержать в себе типичные элементы, которые не меняются от вида и направленности сайта. В примере 1 показан код простого документа, содержащего основные элементы.</p>
+        <h2 class="curse_title-img">Пример 1. Исходный код веб-страницы:</h1>
+        <img src="./assets/img/primer18.png" alt="primer11">
+        <p>Скопируйте содержимое данного примера и сохраните его в папке c:\www\ под именем example2.html. После этого запустите браузер и откройте файл через пункт меню Файл > Открыть файл (Ctrl+O). В диалоговом окне выбора документа укажите файл example2.html. В браузере откроется веб-страница, показанная на рис. 1.</p>
+        <img src="./assets/img/primer19.png" alt="primer12">
+        <p>Далее разберём отдельные строки нашего кода.</p>
+        <img src="./assets/img/primer20.png" alt="primer13">
+        <p>Элемент <"!DOCTYPE"> (жарг. доктайп) предназначен для указания типа текущего документа — DTD (document type definition, описание типа документа). Это необходимо, чтобы браузер понимал, как следует интерпретировать текущую веб-страницу, ведь HTML существует в нескольких версиях — современный HTML5 или устаревшие HTML4 и XHTML. Чтобы браузер «не путался» и понимал, согласно какому стандарту отображать веб-страницу и необходимо в первой строке кода задавать <"!DOCTYPE">.</p>
+        <img src="./assets/img/primer21.png" alt="primer14">
+        <p>Открывающий тег <"html"> определяет начало HTML-документа, внутри него хранится «голова» (<"head">) и «тело» документа (<"body">). lang — это атрибут элемента <"html">, который показывает что текст документа написан на русском языке (на это указывает значение ru).</p>
+        <img src="./assets/img/primer22.png" alt="primer15">
+        <p>Содержимое этого раздела не показывается напрямую на странице, за исключением элемента <"title">. Внутри <"head"> могут располагаться следующие элементы: <"base">, <"link">, <"meta">, <"script">, <"style"> или <"title">.</p>
+        <img src="./assets/img/primer23.png" alt="primer16">
+        <p>Элемент <"meta"> является универсальным и добавляет целый класс возможностей, в частности, с помощью метатега, как обобщённо называют этот элемент, можно изменить кодировку страницы, добавить ключевые слова, описание документа и многое другое, предназначенное для браузера или поисковых систем. В частности, чтобы браузер понимал, что имеет дело с кодировкой UTF-8 (Unicode transformation format, формат преобразования Юникод) и добавляется данная строка.</p>
+        <img src="./assets/img/primer24.png" alt="primer17">
+        <p>Элемент <"title"> определяет название веб-страницы. В браузере оно отображается на текущей вкладке, вот демонстрация:</p>
+        <img src="./assets/img/primer25.png" alt="primer18">
+        <p>Элемент <"title"> является обязательным и должен непременно присутствовать в коде документа. Внутри разрешается писать только текст и никаких других элементов в <"title"> быть не должно. Но допустимо добавлять разные текстовые символы, например, так: <"title">Adobe™ Photoshop®<"/title">.</p>
+        <img src="./assets/img/primer26.png" alt="primer19">
+        <p>Закрывающий тег </head> показывает, что «голова» документа завершена.</p>
+        <img src="./assets/img/primer27.png" alt="primer20">
+        <p>«Тело» документа <body> предназначено для размещения элементов и содержимого веб-страницы.</p>
+        <img src="./assets/img/primer28.png" alt="primer21">
+        <p>Следует добавить закрывающий тег <"/body">, чтобы показать, что «тело» документа завершено.</p>
+        <img src="./assets/img/primer29.png" alt="primer22">
+        <p>Последним элементом в коде всегда идёт закрывающий тег <"/html">.</p>
+        <div class="next_curse-button">
+            <a href="./course4.html" class="next_button">Следующий шаг</a>
+        </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

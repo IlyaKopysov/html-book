@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Электронный учебник HTML</title>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="logo">
+            <a href="./index.html"><img src="./assets/img/kiu-logo-menu (1).png" alt="kiu mini" class="kiu_mini"></a>
+        </div>
+        <div class="menu_bar">
+            <a href="./about.html" class="nav_bar">О нас</a>
+            <a href="./course1.html" class="nav_bar">Перейти к курсу</a>
+            <a href="./vhod.html" class="nav_bar">Войти/Зарегистрироваться</a>
+        </div>
+    </div>
+</header>
+<div class="course_wrapper">
+    <div class="course_panel">
+        <h1 class="course_title">Курс HTML:</h1>
+        <ol class="course_nav">
+            <a href="./course1.html" class="course_nav-bar-a"><li class="course_nav-bar"><strong>Введение в HTML</strong></li></a>
+            <a href="./course2.html" class="course_nav-bar-a"><li class="course_nav-bar"><strong>Элементы HTML</strong></li></a>
+            <a href="./course3.html" class="course_nav-bar-a"><li class="course_nav-bar"><strong>Структура HTML</strong></li></a>
+            <a href="./course4.html" class="course_nav-bar-a"><li class="course_nav-bar"><strong>Атрибуты</strong></li></a>
+            <a href="./course5.html" class="course_nav-bar-a"><li class="course_nav-bar"><strong>Работа с текстом</strong></li></a>
+            <a href="./course6.html" class="course_nav-bar-a"><li class="course_nav-bar"><strong>Заголовки</strong></li></a>
+            <a href="./course7.html" class="course_nav-bar-a"><li class="course_nav-bar"><strong>Изображения</strong></li></a>
+            <a href="./course8.html" class="course_nav-bar-a"><li class="course_nav-bar"><strong>Размеры изображений</strong></li></a>
+            <a href="./course9.html" class="course_nav-bar-a"><li class="course_nav-bar"><strong>Создание ссылок</strong> </li></a>
+            <a href="./course10.html" class="course_nav-bar-a"><li class="course_nav-bar"><strong>Элементы разделов</strong></li></a>
+          </ol>
+    </div>
+<div class="course_main-content">
+    <div class="course_content">
+        <div class="course_content-title">
+            <h1>2. Элементы HTML:</h1>
+        </div>
+        <p>Если мы посмотрим на код HTML, то увидим, что помимо самого текста, который выводится в браузере, код содержит несколько команд в угловых скобках (к примеру, <"h1">). Такие команды называются элементами HTML и состоят из нескольких частей: открывающего тега, содержимого и закрывающего тега.</p>
+        <img src="./assets/img/primer11.png" alt="primer4">
+        <p>Открывающий тег показывает начало элемента и может содержать или не содержать атрибуты, которые расширяют возможности элемента (об атрибутах расскажем позже). Каждый тег начинается с открывающей угловой скобки, затем идёт имя элемента и закрывающая угловая скобка (<"p">). Теги можно писать в нижнем и верхнем регистре, иными словами, маленькими, большими буквами или произвольно смешивать их. Все варианты написания ниже корректны.</p>
+        <p>- <"article"></p>
+        <p>- <"ARTICLE"></p>
+        <p>- <"Article"></p>
+        <p>После содержимого элемента идёт закрывающий тег, в котором вместе с открывающей угловой скобкой есть косая черта (<"/p">). По закрывающему тегу мы определяем, что элемент завершён.</p>
+        <p>Некоторые элементы не содержат закрывающего тега и такие элементы называются самозакрывающими. Естественно, у них нет и содержимого. Вот пример:</p>
+        <img src="./assets/img/primer12.png" alt="primer5">
+        <p>Итак, каждый элемент содержит открывающий тег и может включать содержимое и закрывающий тег. Порядок открывающих и закрывающих тегов важен и его нельзя нарушать.</p>
+        <p>Правильные варианты:</p>
+        <img src="./assets/img/primer13.png" alt="primer6">
+        <p>Неправильные варианты:</p>
+        <img src="./assets/img/primer14.png" alt="primer7">
+        <h2 class="curse_title-img">Комментарии в HTML</h2>
+        <p>В коде HTML разработчик может писать свои комментарии, которые никак не отображаются в браузере. Такие комментарии нужны для пояснения своего кода и для заметок себе и другим разработчикам. Комментарий начинается с <"!-- и закрывается --">. Всё что находится между этими тегами является комментарием и выводиться в браузере не будет. В комментарии можно включать не только текст, но и целые фрагменты кода, как показано ниже.</p>
+        <img src="./assets/img/primer15.png" alt="primer8">
+        <p>В примере 1 показан типичный HTML-документ с комментариями.</p>
+        <h2 class="curse_title-img">Пример 1. HTML-документ:</h2>
+        <img src="./assets/img/primer16.png" alt="primer9">
+        <p>В данном примере используются элементы <"html">, <"head">, <"title">, <"body">, <"p"> и самозакрывающие элементы <"!doctype"> и <"meta">.<"/p">
+        <h2 class="curse_title-img">Вложения элементов</h2>
+        <p>Одни элементы допустимо вкладывать внутрь других, однако следует соблюдать их порядок. Продемонстрируем, как можно и нельзя добавлять один элемент внутрь другого.</p>
+        <img src="./assets/img/primer17.png" alt="primer10">
+        <p>В первой демонстрации правильно, во второй нет.</p>
+        <div class="next_curse-button">
+            <a href="./course3.html" class="next_button">Следующий шаг</a>
+        </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

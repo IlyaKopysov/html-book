@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Электронный учебник HTML</title>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="logo">
+            <a href="./index.html"><img src="./assets/img/kiu-logo-menu (1).png" alt="kiu mini" class="kiu_mini"></a>
+        </div>
+        <div class="menu_bar">
+            <a href="./about.html" class="nav_bar">О нас</a>
+            <a href="./course1.html" class="nav_bar">Перейти к курсу</a>
+            <a href="./vhod.html" class="nav_bar">Войти/Зарегистрироваться</a>
+        </div>
+    </div>
+</header>
+<div class="course_wrapper">
+    <div class="course_panel">
+        <h1 class="course_title">Курс HTML:</h1>
+        <ol class="course_nav">
+            <a href="./course1.html" class="course_nav-bar-a"><li class="course_nav-bar"><strong>Введение в HTML</strong></li></a>
+            <a href="./course2.html" class="course_nav-bar-a"><li class="course_nav-bar"><strong>Элементы HTML</strong></li></a>
+            <a href="./course3.html" class="course_nav-bar-a"><li class="course_nav-bar"><strong>Структура HTML</strong></li></a>
+            <a href="./course4.html" class="course_nav-bar-a"><li class="course_nav-bar"><strong>Атрибуты</strong></li></a>
+            <a href="./course5.html" class="course_nav-bar-a"><li class="course_nav-bar"><strong>Работа с текстом</strong></li></a>
+            <a href="./course6.html" class="course_nav-bar-a"><li class="course_nav-bar"><strong>Заголовки</strong></li></a>
+            <a href="./course7.html" class="course_nav-bar-a"><li class="course_nav-bar"><strong>Изображения</strong></li></a>
+            <a href="./course8.html" class="course_nav-bar-a"><li class="course_nav-bar"><strong>Размеры изображений</strong></li></a>
+            <a href="./course9.html" class="course_nav-bar-a"><li class="course_nav-bar"><strong>Создание ссылок</strong> </li></a>
+            <a href="./course10.html" class="course_nav-bar-a"><li class="course_nav-bar"><strong>Элементы разделов</strong></li></a>
+          </ol>
+    </div>
+<div class="course_main-content">
+    <div class="course_content">
+        <div class="course_content-title">
+            <h1>7. Изображения:</h1>
+        </div>
+        <p>Для добавления изображения на веб-страницу используется элемент <"img">(от англ. image — изображение), атрибут src (от англ. source — источник) которого определяет адрес графического файла. Общий синтаксис добавления изображения следующий.</p>
+        <img src="./assets/img/primer39.png" alt="primer39">
+        <p>Атрибут src задаёт путь к графическому файлу, для его указания можно использовать как абсолютный, так и относительный адрес. Далее рассмотрим несколько разных способов, как определить путь к изображению для размещения его на веб-странице. В качестве примера возьмём файл с именем target.png, который хранится в папке images корня сайта.</p>
+        <h2 class="curse_title-img">https://example.com/images/target.png</h2>
+        <p>Если адрес начинается с протокола (http:// или https://), то речь идёт об абсолютном адресе. Изображение всегда будет загружаться с указанного адреса в Интернете, даже при сохранении веб-страницы на локальный компьютер.</p>
+        <h2 class="curse_title-img">//example.com/images/target.png</h2>
+        <p>Это абсолютный адрес изображения без указания протокола. Браузер самостоятельно подставит нужный протокол, на котором работает сайт (http:// или https://). Учтите, что такого рода адреса не работают на локальных веб-страницах, а только в Интернете под управлением веб-сервера.</p>
+        <h2 class="curse_title-img">/images/target.png</h2>
+        <p>Если в начале адреса стоит косая черта (/), это означает, что папка images располагается в корне сайта. Одна папка может быть вложена в другую, поэтому путь может увеличиться. К примеру, /assets/images/target.png означает, что папка assets располагается в корне сайта, в ней хранится папка images, внутри которой расположен файл target.png.</p>
+        <h2 class="curse_title-img">../images/target.png</h2>
+        <p>Две точки с косой чертой в начале адреса (../) говорят о том, что папка с изображением находится на уровень выше в структуре папок относительно HTML-документа. На рис. 1 показан файл source.html, в который требуется вставить рисунок target.png.</p>
+        <img src="./assets/img/primer40.png" alt="primer40">
+        <h2 class="curse_title-img">images/target.png</h2>
+        <p>Имя папки без всяких точек в начале адреса сообщает, что HTML-документ и папка с изображением находятся на одном уровне (рис. 2).</p>
+        <img src="./assets/img/primer41.png" alt="primer41">
+        <h2 class="curse_title-img">target.png</h2>
+        <p>Единственное имя файла говорит о том, что изображение и веб-страница располагаются в одном месте (рис. 3).</p>
+        <img src="./assets/img/primer42.png" alt="primer42">
+        <p>В примере 1 показано несколько способов добавления рисунка на веб-страницу.</p>
+        <h2 class="curse_title-img">Пример 1. Добавление изображений:</h2>
+        <img src="./assets/img/primer43.png" alt="primer43">
+        <div class="next_curse-button">
+            <a href="./course8.html" class="next_button">Следующий шаг</a>
+        </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

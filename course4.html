@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Электронный учебник HTML</title>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="logo">
+            <a href="./index.html"><img src="./assets/img/kiu-logo-menu (1).png" alt="kiu mini" class="kiu_mini"></a>
+        </div>
+        <div class="menu_bar">
+            <a href="./about.html" class="nav_bar">О нас</a>
+            <a href="./course1.html" class="nav_bar">Перейти к курсу</a>
+            <a href="./vhod.html" class="nav_bar">Войти/Зарегистрироваться</a>
+        </div>
+    </div>
+</header>
+<div class="course_wrapper">
+    <div class="course_panel">
+        <h1 class="course_title">Курс HTML:</h1>
+        <ol class="course_nav">
+            <a href="./course1.html" class="course_nav-bar-a"><li class="course_nav-bar"><strong>Введение в HTML</strong></li></a>
+            <a href="./course2.html" class="course_nav-bar-a"><li class="course_nav-bar"><strong>Элементы HTML</strong></li></a>
+            <a href="./course3.html" class="course_nav-bar-a"><li class="course_nav-bar"><strong>Структура HTML</strong></li></a>
+            <a href="./course4.html" class="course_nav-bar-a"><li class="course_nav-bar"><strong>Атрибуты</strong></li></a>
+            <a href="./course5.html" class="course_nav-bar-a"><li class="course_nav-bar"><strong>Работа с текстом</strong></li></a>
+            <a href="./course6.html" class="course_nav-bar-a"><li class="course_nav-bar"><strong>Заголовки</strong></li></a>
+            <a href="./course7.html" class="course_nav-bar-a"><li class="course_nav-bar"><strong>Изображения</strong></li></a>
+            <a href="./course8.html" class="course_nav-bar-a"><li class="course_nav-bar"><strong>Размеры изображений</strong></li></a>
+            <a href="./course9.html" class="course_nav-bar-a"><li class="course_nav-bar"><strong>Создание ссылок</strong> </li></a>
+            <a href="./course10.html" class="course_nav-bar-a"><li class="course_nav-bar"><strong>Элементы разделов</strong></li></a>
+          </ol>
+    </div>
+<div class="course_main-content">
+    <div class="course_content">
+        <div class="course_content-title">
+            <h1>4. Атрибуты:</h1>
+        </div>
+        <p>Чтобы расширить возможности отдельных элементов HTML, к ним добавляются атрибуты. Есть два типа атрибутов: атрибут со значением и логический атрибут, у которого нет значения. Атрибуты пишутся внутри открывающего тега, несколько атрибутов перечисляются через пробел, порядок их значения не имеет.</p>
+        <h2 class="curse_title-img">Атрибуты со значением</h2>
+        <p>Вначале пишется открывающий тег, затем через пробел имя атрибута, после чего ставится знак равно (=) и в кавычках указывается значение атрибута. Общий синтаксис такой.</p>
+        <img src="./assets/img/primer30.png" alt="primer23">
+        <p>Для самозакрывающих элементов всё будет аналогично, кроме содержимого и закрывающего тега.</p>
+        <img src="./assets/img/primer31.png" alt="primer24">
+        <p>Вместо двойных кавычек ("значение") можно писать одинарные кавычки ('значение') или вообще опустить кавычки (значение). Однако хорошим тоном будет всегда писать значения атрибутов в кавычках, потому что их отсутствие может привести к неявным ошибкам. Приведём небольшой пример.</p>
+        <img src="./assets/img/primer32.png" alt="primer25">
+        <p>В данном примере первая строка написана правильно со всеми кавычками, а в следующей строке у атрибута alt кавычки отсутствуют. Поскольку пробел отделяет один атрибут от другого, то браузер в качестве значения alt возьмёт только первое слово (Вид), а слово заголовка будет воспринимать как новый атрибут. Но так как подобного атрибута не существует, то это приведёт к ошибке.</p>
+        <p>К атрибутам применяются следующие простые правила.</p>
+        <img src="./assets/img/primer33.png" alt="primer26">
+        <h2 class="curse_title-img">Пример 1. Использование атрибутов:</h2>
+        <img src="./assets/img/primer34.png" alt="primer27">
+        <h2 class="curse_title-img">Логические атрибуты</h2>
+        <p>У логических атрибутов нет значений, само наличие или отсутствие атрибута уже меняет поведение элемента. Синтаксис достаточно простой.</p>
+        <img src="./assets/img/primer35.png" alt="primer28">
+        <p>В примере 2 показано применение логических атрибутов для аудиоплеера.</p>
+        <h2 class="curse_title-img">Пример 2. Использование логического атрибута:</h2>
+        <img src="./assets/img/primer36.png" alt="primer29">
+        <p>Логические атрибуты допустимо записывать в трёх видах:</p>
+        <img src="./assets/img/primer37.png" alt="primer30">
+        <p>Все варианты равнозначны, но желательно придерживаться одной выбранной формы записи.</p>
+        <p>Опять же имена атрибутов не чувствительны к регистру, это значит, что их можно писать маленькими или большими буквами. Но рекомендуем придерживаться единообразия и писать атрибуты в нижнем регистре — name. А никак не Name или NAME. Ещё раз подчеркнём, что так писать не надо.</p>
+        <h2 class="curse_title-img">Порядок атрибутов</h2>
+        <p>Порядок атрибутов в элементе не имеет значения и на результат отображения элемента не влияет. Также допустим перенос атрибутов на другую строку. Следующие записи по своему действию равноценны.</p>
+        <img src="./assets/img/primer38.png" alt="primer31">
+        <h2 class="curse_title-img">Универсальные атрибуты</h2>
+        <p>У некоторых элементов есть свой набор характерных атрибутов, но кроме этого существуют атрибуты, которые можно добавлять к любому элементу. По этой причине они называются универсальными или глобальными атрибутами. Перечислим несколько вариантов class, id, lang, style, title.</p>
+        <div class="next_curse-button">
+            <a href="./course5.html" class="next_button">Следующий шаг</a>
+        </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

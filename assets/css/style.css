@@ -1,0 +1,288 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+
+header{
+    background-color: #2a52be;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
+
+.kiu_mini{
+    width: 100px;
+}
+
+.container{
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    color: white;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    margin-right: 50px;
+}
+
+.nav_bar{
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.nav_bar:hover{
+    color: orange;
+}
+
+.menu_bar{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+main{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.main_container{
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgb(0, 0, 1);
+}
+
+.title {
+    font-size: 40px;
+}
+
+.subtitle{
+    font-size: 28px;
+}
+
+.main_container_subtitles{
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    align-items: stretch;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.button{
+    background-color: #2a52be;
+    padding: 20px 30px;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.5s linear;
+}
+
+.button:hover{
+    background-color: #0244fa;
+}
+
+.pre_title{
+    display: flex;
+    justify-content: center;
+}
+
+.card_container{
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.7);
+    background: white;
+    margin: 20px auto;
+}
+
+.card_image {
+    position: relative;
+    height: 270px;
+    overflow: hidden;
+}
+  
+.card_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card_content {
+    padding: 5px;
+}
+
+.card_title {
+    margin: 0 0 10px 0;
+    font-size: 1.5rem; 
+}
+
+.course_panel{
+    width: 250px;
+    min-height: 100vh;
+    background-color: #222;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+}
+
+.course_title{
+    margin-top: 50px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.course_nav-bar{
+    color: #fff;
+    padding: 8px 12px;
+    margin: 35px 0;
+    background-color: transparent;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.course_nav-bar-a{
+    text-decoration: none;
+    display: block;
+}
+
+.course_nav-bar:hover{
+    background-color: #424141;
+    transform: scale(1.02);
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.course_nav-bar:active{
+    background: rgba(102,204,102,.5);
+}
+
+.course_wrapper {
+    display: flex;
+}
+
+.course_main-content {
+    padding: 20px 40px;
+    width: 1325px;
+}
+
+.course_content-title{
+    box-shadow: 0 2px rgb(0, 0, 1);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.course_content{
+    margin-left: 200px;
+}
+
+p{
+    font-size: 20px;
+    padding: 10px;
+}
+
+.curse_title-img{
+    text-align: center;
+    margin-right: 200px;
+}
+
+.next_curse-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.next_button{
+    background-color: #2a52be;
+    padding: 20px 30px;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.5s linear;
+}
+
+.footer__container {
+    max-width: 2000px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin: 0 auto;
+}
+
+.footer__wrap {
+    margin-top: 100px;
+}
+
+.footer__blocks {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2a52be;
+}
+
+.footer__long-text {
+    font-size: 24px;
+    font-weight: 400;
+    padding-left: 50px;
+    color: #ffffff;
+}
+.footer__under {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2a52be;
+    box-shadow: 0 2px 10px rgb(0, 0, 1);
+}
+
+hr{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.footer__logo-block {
+    display: flex;
+    justify-content: center;
+    padding-left: 34px;
+    padding-bottom: 10px;
+}
+
+.footer__logo {
+    color: #ffffff;
+}
+
+.github_logo{
+    width: 100px;
+}
+
+.about_container{
+    margin-top: 80px;
+    text-align: center;
+    margin-bottom: 199px;
+}
+
+.about_text{
+    font-size: 22.3px;
+}

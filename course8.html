@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Электронный учебник HTML</title>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="logo">
+            <a href="./index.html"><img src="./assets/img/kiu-logo-menu (1).png" alt="kiu mini" class="kiu_mini"></a>
+        </div>
+        <div class="menu_bar">
+            <a href="./about.html" class="nav_bar">О нас</a>
+            <a href="./course1.html" class="nav_bar">Перейти к курсу</a>
+            <a href="./vhod.html" class="nav_bar">Войти/Зарегистрироваться</a>
+        </div>
+    </div>
+</header>
+<div class="course_wrapper">
+    <div class="course_panel">
+        <h1 class="course_title">Курс HTML:</h1>
+        <ol class="course_nav">
+            <a href="./course1.html" class="course_nav-bar-a"><li class="course_nav-bar"><strong>Введение в HTML</strong></li></a>
+            <a href="./course2.html" class="course_nav-bar-a"><li class="course_nav-bar"><strong>Элементы HTML</strong></li></a>
+            <a href="./course3.html" class="course_nav-bar-a"><li class="course_nav-bar"><strong>Структура HTML</strong></li></a>
+            <a href="./course4.html" class="course_nav-bar-a"><li class="course_nav-bar"><strong>Атрибуты</strong></li></a>
+            <a href="./course5.html" class="course_nav-bar-a"><li class="course_nav-bar"><strong>Работа с текстом</strong></li></a>
+            <a href="./course6.html" class="course_nav-bar-a"><li class="course_nav-bar"><strong>Заголовки</strong></li></a>
+            <a href="./course7.html" class="course_nav-bar-a"><li class="course_nav-bar"><strong>Изображения</strong></li></a>
+            <a href="./course8.html" class="course_nav-bar-a"><li class="course_nav-bar"><strong>Размеры изображений</strong></li></a>
+            <a href="./course9.html" class="course_nav-bar-a"><li class="course_nav-bar"><strong>Создание ссылок</strong> </li></a>
+            <a href="./course10.html" class="course_nav-bar-a"><li class="course_nav-bar"><strong>Элементы разделов</strong></li></a>
+          </ol>
+    </div>
+<div class="course_main-content">
+    <div class="course_content">
+        <div class="course_content-title">
+            <h1>8. Размеры изображений:</h1>
+        </div>
+        <p>Для изменения размеров рисунка у элемента <"img"> предусмотрены атрибуты width (ширина) и height (высота). В качестве значения используются пиксели, причём ставить можно только целые положительные числа. Таким образом, варианты 40%, 36.6, 50px и подобные считаются ошибкой.</p>
+        <p>В примере 1 показано добавление атрибутов width и height к <"img">.</p>
+        <h2 class="curse_title-img">Пример 1. Размеры рисунка:</h2>
+        <img src="./assets/img/primer44.png" alt="primer44">
+        <p>Атрибуты width и height не являются обязательными, после загрузки изображения браузер самостоятельно установит его исходный размер. В основном эти атрибуты применяются в следующих целях:</p>
+        <img src="./assets/img/primer45.png" alt="primer45">
+        <p>Если размеры изображения указаны явно, то браузер использует их для того, чтобы отображать соответствующую картинке пустую область в процессе загрузки документа. В противном случае браузер ждёт, когда рисунок загрузится полностью, после чего меняет ширину и высоту картинки. При этом может произойти переформатирование текста, поскольку первоначально размер картинки не известен и автоматически он устанавливается небольшим.</p>
+        <p>Ширину и высоту изображения можно менять как в меньшую, так и в большую сторону. Браузер самостоятельно уберёт лишние пиксели или наоборот, достроит недостающие, чтобы получить изображение соответствующего размера. Качество получаемой в итоге картинки сильно зависит от её содержимого, в любом случае надо помнить, что бесконечно увеличивать изображение без потери детализации возможно только с форматом SVG.</p>
+        <p>Дисплеи Retina отличаются высокой плотностью пикселей и детализацией изображений, поэтому обычные картинки на них выглядят чуть размытыми. Чтобы улучшить качество изображения, картинки готовят удвоенного размера. К примеру, если на веб-странице требуется фотография шириной 400 пикселей, то мы берём фотографию шириной 800 пикселей, но в значении атрибута width оставляем ширину 400 пикселей.</p>
+        <p>В примере 2 используются две картинки — одна шириной 128 пикселей, а другая шириной 256 пикселей. Обе они показаны в размере 128 пикселей.</p>
+        <h2 class="curse_title-img">Пример 2. Плотность пикселей:</h2>
+        <img src="./assets/img/primer46.png" alt="primer46">
+        <p>Результат данного примера показан на рис. 1. Обратите внимание, что левая картинка выглядит более размытой по сравнению с правой картинкой.</p>
+        <img src="./assets/img/primer47.png" alt="primer47">
+        <p>Атрибуты width и height не обязательно должны идти совместно. Если какой-то из этих атрибутов не указан, то браузер самостоятельно подставит нужное значение, исходя из пропорций изображения.</p>
+        <img src="./assets/img/primer48.png" alt="primer48">
+        <p>На рис. 2 показана картинка, для которой установили только ширину.</p>
+        <img src="./assets/img/primer49.png" alt="primer49">
+        <p>За счёт того, что мы самостоятельно подставляем ширину и высоту картинки, мы можем намеренно искажать её пропорции, вытягивая картинку по вертикали или горизонтали.</p>
+        <img src="./assets/img/primer50.png" alt="primer50">
+        <p>На рис. 3 показано изображение с неверно заданными шириной и высотой, из-за чего картинка получилась сдавленной.</p>
+        <img src="./assets/img/primer51.png" alt="primer51">
+        <div class="next_curse-button">
+            <a href="./course9.html" class="next_button">Следующий шаг</a>
+        </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
